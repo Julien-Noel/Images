@@ -1,0 +1,72 @@
+\hypertarget{classmam3_1_1ipa_1_1projet_1_1_matrix_operator}{}\doxysection{mam3.\+ipa.\+projet.\+Matrix\+Operator Class Reference}
+\label{classmam3_1_1ipa_1_1projet_1_1_matrix_operator}\index{mam3.ipa.projet.MatrixOperator@{mam3.ipa.projet.MatrixOperator}}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classmam3_1_1ipa_1_1projet_1_1_matrix_operator_aed09606c9c1f4ba91c936486b7ccae97}{create\+Matrix}} (String\mbox{[}$\,$\mbox{]} lines, String p)
+\item 
+static void \mbox{\hyperlink{classmam3_1_1ipa_1_1projet_1_1_matrix_operator_a7e735dc298454c1d4484ae32346cada2}{create\+Matrix}} (String\mbox{[}$\,$\mbox{]} lines, Path p)
+\item 
+static void \mbox{\hyperlink{classmam3_1_1ipa_1_1projet_1_1_matrix_operator_aedcbb23937957382974bc4b4db12c972}{read\+Int}} (String s)  throws Bad\+Conv\+Matrix\+Exception 
+\item 
+static void \mbox{\hyperlink{classmam3_1_1ipa_1_1projet_1_1_matrix_operator_a5e8c8cb4595bba5b34b21ccf7a0105ea}{check\+Size}} (int n, int m)  throws Bad\+Conv\+Matrix\+Exception 
+\item 
+static int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmam3_1_1ipa_1_1projet_1_1_matrix_operator_a4fa69eb45f9a6c1464c55d1837c591ff}{convolution}} (String p, int\mbox{[}$\,$\mbox{]} t, int width, int height, int divisor, int offset)
+\item 
+static int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{classmam3_1_1ipa_1_1projet_1_1_matrix_operator_a3741bca2eccfc12b6e8d44a23fec824b}{convolution}} (String p, int\mbox{[}$\,$\mbox{]} t, int width, int height)
+\item 
+static int \mbox{\hyperlink{classmam3_1_1ipa_1_1projet_1_1_matrix_operator_a068bebaef585bad52c6583d927d1f3f3}{index\+For\+Multiplication}} (int x, int y, int w\+Max, int h\+Max, int i)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classmam3_1_1ipa_1_1projet_1_1_matrix_operator_a5e8c8cb4595bba5b34b21ccf7a0105ea}\label{classmam3_1_1ipa_1_1projet_1_1_matrix_operator_a5e8c8cb4595bba5b34b21ccf7a0105ea}} 
+\index{mam3.ipa.projet.MatrixOperator@{mam3.ipa.projet.MatrixOperator}!checkSize@{checkSize}}
+\index{checkSize@{checkSize}!mam3.ipa.projet.MatrixOperator@{mam3.ipa.projet.MatrixOperator}}
+\doxysubsubsection{\texorpdfstring{checkSize()}{checkSize()}}
+{\footnotesize\ttfamily static void mam3.\+ipa.\+projet.\+Matrix\+Operator.\+check\+Size (\begin{DoxyParamCaption}\item[{int}]{n,  }\item[{int}]{m }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classmam3_1_1ipa_1_1projet_1_1_bad_conv_matrix_exception}{Bad\+Conv\+Matrix\+Exception}}\hspace{0.3cm}{\ttfamily [static]}}
+
+Checks if the n-\/long array have m elements \mbox{\Hypertarget{classmam3_1_1ipa_1_1projet_1_1_matrix_operator_a3741bca2eccfc12b6e8d44a23fec824b}\label{classmam3_1_1ipa_1_1projet_1_1_matrix_operator_a3741bca2eccfc12b6e8d44a23fec824b}} 
+\index{mam3.ipa.projet.MatrixOperator@{mam3.ipa.projet.MatrixOperator}!convolution@{convolution}}
+\index{convolution@{convolution}!mam3.ipa.projet.MatrixOperator@{mam3.ipa.projet.MatrixOperator}}
+\doxysubsubsection{\texorpdfstring{convolution()}{convolution()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static int \mbox{[}$\,$\mbox{]} mam3.\+ipa.\+projet.\+Matrix\+Operator.\+convolution (\begin{DoxyParamCaption}\item[{String}]{p,  }\item[{int\mbox{[}$\,$\mbox{]}}]{t,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Does the convolution with divisor=1 and offset=0 \mbox{\Hypertarget{classmam3_1_1ipa_1_1projet_1_1_matrix_operator_a4fa69eb45f9a6c1464c55d1837c591ff}\label{classmam3_1_1ipa_1_1projet_1_1_matrix_operator_a4fa69eb45f9a6c1464c55d1837c591ff}} 
+\index{mam3.ipa.projet.MatrixOperator@{mam3.ipa.projet.MatrixOperator}!convolution@{convolution}}
+\index{convolution@{convolution}!mam3.ipa.projet.MatrixOperator@{mam3.ipa.projet.MatrixOperator}}
+\doxysubsubsection{\texorpdfstring{convolution()}{convolution()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static int \mbox{[}$\,$\mbox{]} mam3.\+ipa.\+projet.\+Matrix\+Operator.\+convolution (\begin{DoxyParamCaption}\item[{String}]{p,  }\item[{int\mbox{[}$\,$\mbox{]}}]{t,  }\item[{int}]{width,  }\item[{int}]{height,  }\item[{int}]{divisor,  }\item[{int}]{offset }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Does the convolution \mbox{\Hypertarget{classmam3_1_1ipa_1_1projet_1_1_matrix_operator_a7e735dc298454c1d4484ae32346cada2}\label{classmam3_1_1ipa_1_1projet_1_1_matrix_operator_a7e735dc298454c1d4484ae32346cada2}} 
+\index{mam3.ipa.projet.MatrixOperator@{mam3.ipa.projet.MatrixOperator}!createMatrix@{createMatrix}}
+\index{createMatrix@{createMatrix}!mam3.ipa.projet.MatrixOperator@{mam3.ipa.projet.MatrixOperator}}
+\doxysubsubsection{\texorpdfstring{createMatrix()}{createMatrix()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static void mam3.\+ipa.\+projet.\+Matrix\+Operator.\+create\+Matrix (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{lines,  }\item[{Path}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classmam3_1_1ipa_1_1projet_1_1_matrix_operator_aed09606c9c1f4ba91c936486b7ccae97}\label{classmam3_1_1ipa_1_1projet_1_1_matrix_operator_aed09606c9c1f4ba91c936486b7ccae97}} 
+\index{mam3.ipa.projet.MatrixOperator@{mam3.ipa.projet.MatrixOperator}!createMatrix@{createMatrix}}
+\index{createMatrix@{createMatrix}!mam3.ipa.projet.MatrixOperator@{mam3.ipa.projet.MatrixOperator}}
+\doxysubsubsection{\texorpdfstring{createMatrix()}{createMatrix()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static void mam3.\+ipa.\+projet.\+Matrix\+Operator.\+create\+Matrix (\begin{DoxyParamCaption}\item[{String\mbox{[}$\,$\mbox{]}}]{lines,  }\item[{String}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+If there is no error, creates the file convmatrix.\+csv \mbox{\Hypertarget{classmam3_1_1ipa_1_1projet_1_1_matrix_operator_a068bebaef585bad52c6583d927d1f3f3}\label{classmam3_1_1ipa_1_1projet_1_1_matrix_operator_a068bebaef585bad52c6583d927d1f3f3}} 
+\index{mam3.ipa.projet.MatrixOperator@{mam3.ipa.projet.MatrixOperator}!indexForMultiplication@{indexForMultiplication}}
+\index{indexForMultiplication@{indexForMultiplication}!mam3.ipa.projet.MatrixOperator@{mam3.ipa.projet.MatrixOperator}}
+\doxysubsubsection{\texorpdfstring{indexForMultiplication()}{indexForMultiplication()}}
+{\footnotesize\ttfamily static int mam3.\+ipa.\+projet.\+Matrix\+Operator.\+index\+For\+Multiplication (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y,  }\item[{int}]{w\+Max,  }\item[{int}]{h\+Max,  }\item[{int}]{i }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\begin{DoxyReturn}{Returns}
+the correct index for the multiplication if it\textquotesingle{}s possible and -\/1 if it\textquotesingle{}s not 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classmam3_1_1ipa_1_1projet_1_1_matrix_operator_aedcbb23937957382974bc4b4db12c972}\label{classmam3_1_1ipa_1_1projet_1_1_matrix_operator_aedcbb23937957382974bc4b4db12c972}} 
+\index{mam3.ipa.projet.MatrixOperator@{mam3.ipa.projet.MatrixOperator}!readInt@{readInt}}
+\index{readInt@{readInt}!mam3.ipa.projet.MatrixOperator@{mam3.ipa.projet.MatrixOperator}}
+\doxysubsubsection{\texorpdfstring{readInt()}{readInt()}}
+{\footnotesize\ttfamily static void mam3.\+ipa.\+projet.\+Matrix\+Operator.\+read\+Int (\begin{DoxyParamCaption}\item[{String}]{s }\end{DoxyParamCaption}) throws \mbox{\hyperlink{classmam3_1_1ipa_1_1projet_1_1_bad_conv_matrix_exception}{Bad\+Conv\+Matrix\+Exception}}\hspace{0.3cm}{\ttfamily [static]}}
+
+Checks if the String parameter can be an Integer 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_matrix_operator_8java}{Matrix\+Operator.\+java}}\end{DoxyCompactItemize}
